@@ -1,0 +1,184 @@
+$base-text-color: orange;
+$link-color: orange;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  color: $base-text-color;
+}
+
+h1 {
+  text-align: center;
+  
+  margin-top: 10px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: orange;
+  
+}
+.back{
+
+  height: 20vh;
+  background-color: purple;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5)
+  );
+
+  .message {
+    position: relative;
+    transform: translate(-5%, -5%);
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+  }
+}
+
+.loader-open {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.errorMsg {
+  text-align: center;
+  color: #ff0000;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-left: 20px;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: 10px;
+    text-transform: capitalize;
+    color: inherit;
+    letter-spacing: 2px;
+  }
+}
+
+.story {
+  width: 95%;
+  margin: 10px auto;
+  border-bottom: 1px solid grey;
+  
+  // border-radius: 5px;
+  padding: 10px;
+
+  .story-title {
+    margin-bottom: 4px;
+    a:link,
+    a:visited {
+      font-size: 18px;
+      color: $base-text-color;
+    }
+
+    a:hover,
+    a:active {
+      text-decoration: none;
+    }
+  }
+
+  .story-info {
+    color: $link-color;
+    span {
+      margin: 2px;
+    }
+    a {
+      color: inherit;
+    }
+  }
+}
+footer{
+  height: 12vh;
+  background-color: purple;
+  p{
+    color: orange;
+    font-size: large;
+    padding-top: 10px;
+    text-align: center;
+  }
+  ul{
+   
+    li{
+      display: inline;
+      margin-left: 250px;
+      a{
+        i{
+          
+          color: orange;
+          padding-left: 20px;
+          
+        }
+      }
+      
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  .back{
+
+  }
+  .back{
+
+    height: 50vh;
+    background-color: purple;
+  }
+  .nav-link {
+    flex-direction: column;
+  }
+  .story {
+    width: 90%;
+  }
+  footer{
+    height: 25vh;
+    ul{
+   
+      li{
+        a{
+          i{
+            
+            
+            padding-top: 20px;
+            
+          }
+        }
+        
+      }
+    }
+    
+  }
+}

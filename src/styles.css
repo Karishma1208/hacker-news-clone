@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  color: orange;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+.back {
+  height: 20vh;
+  background-color: purple;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
+
+#loader .message {
+  position: relative;
+  -webkit-transform: translate(-5%, -5%);
+          transform: translate(-5%, -5%);
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+}
+
+.loader-open {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.errorMsg {
+  text-align: center;
+  color: #ff0000;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-left: 20px;
+  font-size: x-large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-link a {
+  margin: 10px;
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: 2px;
+}
+
+.story {
+  width: 95%;
+  margin: 10px auto;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+
+.story .story-title {
+  margin-bottom: 4px;
+}
+
+.story .story-title a:link,
+.story .story-title a:visited {
+  font-size: 18px;
+  color: orange;
+}
+
+.story .story-title a:hover,
+.story .story-title a:active {
+  text-decoration: none;
+}
+
+.story .story-info {
+  color: orange;
+}
+
+.story .story-info span {
+  margin: 2px;
+}
+
+.story .story-info a {
+  color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .nav-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .story {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
